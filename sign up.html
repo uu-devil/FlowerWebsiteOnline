@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="sign up.css">
+    <title>Sign up</title>
+</head>
+
+<body>
+    <section>
+        
+        <div class="contentbox">
+            <div class="frmbox">
+                <h1  data-aos="fade-down" data-aos-duration="2000">Sign Up</h1>
+               
+                <form action="sign_up.php" method="post">
+                    <div class="inputbx" data-aos="fade-right" data-aos-duration="2000">
+                        <label for="">Name</label>
+                        <input type="text"  name="name" autocomplete="off" class="form-control">
+                    </div>
+                    <div class="inputbx" data-aos="fade-left"  data-aos-duration="2000">
+                        <label for="">Mobile No.</label>
+                        <input type="number" name="mobile_no" autocomplete="off" class="form-control">
+                    </div>
+                    <div class="inputbx" data-aos="fade-right"  data-aos-duration="2000">
+                        <label for="">Email Id</label>
+                        <input type="email"  name="email_id" autocomplete="off" class="form-control">
+                    </div>
+                
+                    <div class="inputbx" data-aos="fade-left"  data-aos-duration="2000">
+                        <label for="">Password</label>
+                        <input type="password" name="password" autocomplete="off" class="form-control">
+                    </div>
+                    <div class="inputbx" > 
+                       <input type="submit" value="Sign Up">
+                    </div>
+                    
+                </form>
+                <p>Already have an account ? <a href="login.html">Login Now</a></p>
+            </div>
+
+
+        </div>
+    </section>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+</html>

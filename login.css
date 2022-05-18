@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Fredoka+One&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   transition: all .2s linear;
+  
+   
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+section .contentbox{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/roses-821705_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section .contentbox .frmbox{
+    margin-right: 25rem;
+}
+section .contentbox .frmbox p{
+    font-weight: bolder;
+}
+section .contentbox .frmbox p a{
+    color: white;
+}
+
+section .contentbox .frmbox h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: black;
+}
+section .contentbox .frmbox h3{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 7px;
+   
+}
+section .contentbox .frmbox .inputbx{
+    margin-bottom: 5px;
+}
+section .contentbox .frmbox .inputbx label{
+    font-size: 18px;
+    margin-bottom: 3px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+section .contentbox .frmbox .inputbx input{
+    width: 100%;
+    padding: 6px 18px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid;
+    font-size: 14px;
+    background: white;
+    border-radius: 30px;
+}
+section .contentbox .frmbox .inputbx input[type="submit"]{
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px)
+{
+    section .imgbox{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    section .contentbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    section .contentbox .frmbox{
+        width: 100%;
+        padding: 40px;
+       background-color: rgba(255, 255, 255, 0.8);
+        margin: 50px;
+    }
+    section .contentbox{
+        
+        background-color: transparent;
+    }
+    section .imgbox{
+       
+        background-color: #FCF3CF;
+    }
+
+}
+@media (max-width:550px) {
+    section .contentbox .frmbox .inputbx label{
+        font-size: 12px;
+        margin-bottom: 2px;
+        display: inline-block;
+        font-weight: 600;
+    }
+    section .contentbox .frmbox .inputbx input{
+        padding: 6px 16px;
+        font-size: 12px;
+        background: white;
+        
+    }
+    section .contentbox .frmbox h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+       
+    }
+    section .contentbox .frmbox h3{
+       
+        font-size: 1rem;
+        font-weight: 500;
+       
+    }
+    section .contentbox .frmbox p {
+        font-size: 12px;
+    }
+}
